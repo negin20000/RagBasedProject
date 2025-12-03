@@ -1,0 +1,17 @@
+# Core LangChain packages
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+langchain-google-genai>=1.0.0
+langchain-ollama>=0.1.0
+langchain-chroma>=0.1.0
+
+# Vector Database
+chromadb>=0.4.0
+
+# Environment variables management
+python-dotenv>=1.0.0
+
+# Utilities
+pathlib2>=2.3.7; python_version < '3.4'
+

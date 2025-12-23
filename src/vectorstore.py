@@ -53,7 +53,7 @@ class ChromaVectorStore:
         if self.persist_dir.exists():
             self.load()
         else:
-            print(f"[INFO] Vector database directory does not exist: {self.persist_dir}, please build the database first(python -m src.ingest)")
+            print(f"[INFO] Vector database directory does not exist: {self.persist_dir}")
     
     def build_from_documents(self, documents: List[Document]) -> None:
         """
@@ -164,7 +164,7 @@ class ChromaVectorStore:
         
         if not self.vector_db:
             print("[ERROR] Vector database is not initialized")
-            raise RuntimeError("Vector database not initialized. Call load() or build_from_documents() first.")
+            raise RuntimeError("Vector database not initialized.")
         
         top_k = top_k or DEFAULT_TOP_K
         print(f"[INFO] Querying vector store: '{query_text}' (top_k={top_k})")

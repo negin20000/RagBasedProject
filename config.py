@@ -17,11 +17,11 @@ CHROMA_DB_DIR = DATA_DIR / "chroma_db"
 
 # Model configurations
 EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "qwen3-embedding:0.6b")
-LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gemini-2.0-flash")
+LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gemini-flash-latest")
 
 # LLM settings
 LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.7"))
-LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "2"))
+LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "3"))
 
 # Vector Store settings
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "products_collection")

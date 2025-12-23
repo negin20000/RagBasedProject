@@ -38,7 +38,7 @@ def setup_proxy() -> None:
 
 
 # Setup proxy before imports that use network
-setup_proxy()
+# setup_proxy()
 
 
 class RAGSystem:
